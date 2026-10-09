@@ -492,8 +492,6 @@ describe("getAggregatedAvailability", () => {
   });
 
   it("returns no availability when fixed hosts have no time in common, even if an rr host is free", () => {
-    // Fixed host A: available 11:00-11:30, fixed host B: available 12:00-12:30
-    // RR host C: available 11:00-12:30
     const userAvailability = [
       {
         dateRanges: [],
